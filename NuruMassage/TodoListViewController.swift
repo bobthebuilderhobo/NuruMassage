@@ -10,10 +10,11 @@ import UIKit
 
 class TodoListViewController: UITableViewController {
     
-    let itemArray = ["Capricorn", "Libra", "Plow"]
+    var itemArray = ["lettin out a CumDUMP on the CUNTASAURAUS REX", "50 yard cunt punt", "fuck me in the ass with no Vaseline"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     //MARK - Tableview Datasource Methods
@@ -45,6 +46,34 @@ class TodoListViewController: UITableViewController {
     tableView.deselectRow(at: indexPath, animated: true)
     
     
+    }
+    //MARK - Add New Items
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add New Meat Flaps", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Would you like a cum chug u fuck", style: .default) { (action) in
+            //what will happen once the user clicks the Add Item button on our UI Alert
+        
+            self.itemArray.append(textField.text!)
+            
+            self.tableView.reloadData()
+            
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Eat Hair Pie"
+            textField = alertTextField
+            
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+        
     }
     
 }
