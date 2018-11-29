@@ -14,9 +14,12 @@
 		61524F8C21AAA37600E29CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61524F8A21AAA37600E29CDA /* LaunchScreen.storyboard */; };
 		61524F9D21ACC2D300E29CDA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61524F9B21ACC2D300E29CDA /* DataModel.xcdatamodeld */; };
 		61524FC021ADB4AD00E29CDA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61524FBF21ADB4AD00E29CDA /* CategoryViewController.swift */; };
+		DCB470EA747857EDDC5AF703 /* Pods_NuruMassage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE8C8D36FA37251AC5C5995 /* Pods_NuruMassage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4B72D046E4D809B05727E6 /* Pods-NuruMassage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuruMassage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuruMassage/Pods-NuruMassage.debug.xcconfig"; sourceTree = "<group>"; };
+		5CE8C8D36FA37251AC5C5995 /* Pods_NuruMassage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuruMassage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61524F7E21AAA37300E29CDA /* NuruMassage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuruMassage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61524F8121AAA37300E29CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61524F8321AAA37300E29CDA /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		61524F8D21AAA37600E29CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61524F9C21ACC2D300E29CDA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		61524FBF21ADB4AD00E29CDA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		D39D1F894466351A38FB25A0 /* Pods-NuruMassage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuruMassage.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuruMassage/Pods-NuruMassage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB470EA747857EDDC5AF703 /* Pods_NuruMassage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				61524F8021AAA37300E29CDA /* NuruMassage */,
 				61524F7F21AAA37300E29CDA /* Products */,
+				C6BBBE9681F39487B8090646 /* Pods */,
+				86691F7AD1A5E08BFA62ABDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86691F7AD1A5E08BFA62ABDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CE8C8D36FA37251AC5C5995 /* Pods_NuruMassage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6BBBE9681F39487B8090646 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B72D046E4D809B05727E6 /* Pods-NuruMassage.debug.xcconfig */,
+				D39D1F894466351A38FB25A0 /* Pods-NuruMassage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61524F9021AAA37600E29CDA /* Build configuration list for PBXNativeTarget "NuruMassage" */;
 			buildPhases = (
+				371D48D04A3220B1F4C87E05 /* [CP] Check Pods Manifest.lock */,
 				61524F7A21AAA37300E29CDA /* Sources */,
 				61524F7B21AAA37300E29CDA /* Frameworks */,
 				61524F7C21AAA37300E29CDA /* Resources */,
+				E9EFAF4CB927A64C0DEDEE99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		371D48D04A3220B1F4C87E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NuruMassage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9EFAF4CB927A64C0DEDEE99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NuruMassage/Pods-NuruMassage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NuruMassage/Pods-NuruMassage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61524F7A21AAA37300E29CDA /* Sources */ = {
@@ -320,6 +395,7 @@
 		};
 		61524F9121AAA37600E29CDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4B72D046E4D809B05727E6 /* Pods-NuruMassage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +414,7 @@
 		};
 		61524F9221AAA37600E29CDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39D1F894466351A38FB25A0 /* Pods-NuruMassage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
