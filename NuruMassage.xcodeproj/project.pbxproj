@@ -12,8 +12,9 @@
 		61524F8721AAA37300E29CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61524F8521AAA37300E29CDA /* Main.storyboard */; };
 		61524F8921AAA37600E29CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61524F8821AAA37600E29CDA /* Assets.xcassets */; };
 		61524F8C21AAA37600E29CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61524F8A21AAA37600E29CDA /* LaunchScreen.storyboard */; };
-		61524F9D21ACC2D300E29CDA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61524F9B21ACC2D300E29CDA /* DataModel.xcdatamodeld */; };
 		61524FC021ADB4AD00E29CDA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61524FBF21ADB4AD00E29CDA /* CategoryViewController.swift */; };
+		6185573421B0503300DBF84A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6185573321B0503300DBF84A /* Item.swift */; };
+		6185573621B0504C00DBF84A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6185573521B0504C00DBF84A /* Category.swift */; };
 		DCB470EA747857EDDC5AF703 /* Pods_NuruMassage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE8C8D36FA37251AC5C5995 /* Pods_NuruMassage.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +28,9 @@
 		61524F8821AAA37600E29CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61524F8B21AAA37600E29CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61524F8D21AAA37600E29CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61524F9C21ACC2D300E29CDA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		61524FBF21ADB4AD00E29CDA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		6185573321B0503300DBF84A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6185573521B0504C00DBF84A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D39D1F894466351A38FB25A0 /* Pods-NuruMassage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuruMassage.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuruMassage/Pods-NuruMassage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,8 @@
 		61524F9621ABAE8600E29CDA /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				61524F9B21ACC2D300E29CDA /* DataModel.xcdatamodeld */,
+				6185573521B0504C00DBF84A /* Category.swift */,
+				6185573321B0503300DBF84A /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -248,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6185573421B0503300DBF84A /* Item.swift in Sources */,
 				61524FC021ADB4AD00E29CDA /* CategoryViewController.swift in Sources */,
 				61524F8421AAA37300E29CDA /* TodoListViewController.swift in Sources */,
-				61524F9D21ACC2D300E29CDA /* DataModel.xcdatamodeld in Sources */,
 				61524F8221AAA37300E29CDA /* AppDelegate.swift in Sources */,
+				6185573621B0504C00DBF84A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,19 +457,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		61524F9B21ACC2D300E29CDA /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				61524F9C21ACC2D300E29CDA /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 61524F9C21ACC2D300E29CDA /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 61524F7621AAA37300E29CDA /* Project object */;
 }
